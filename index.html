@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #f3f4ff, #f9f9fb);
+        font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        color: #1f1f24;
+        padding: 24px;
+      }
+
+      .welcome-card {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(12px);
+        border-radius: 20px;
+        padding: 64px 56px;
+        max-width: 520px;
+        box-shadow: 0 20px 40px rgba(31, 31, 36, 0.12);
+      }
+
+      .welcome-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 24px;
+        letter-spacing: -0.02em;
+      }
+
+      .welcome-text {
+        font-size: 1.125rem;
+        line-height: 1.6;
+        color: #46464f;
+        margin-bottom: 40px;
+      }
+
+      .cta-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 18px 48px;
+        font-size: 1.125rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: #ffffff;
+        background: linear-gradient(135deg, #6556ff, #7d5cff);
+        border-radius: 999px;
+        box-shadow: 0 16px 24px rgba(101, 86, 255, 0.35);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .cta-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 20px 32px rgba(101, 86, 255, 0.4);
+      }
+
+      .cta-button:focus-visible {
+        outline: 3px solid rgba(101, 86, 255, 0.35);
+        outline-offset: 4px;
+      }
+
+      @media (max-width: 600px) {
+        .welcome-card {
+          padding: 48px 32px;
+        }
+
+        .welcome-title {
+          font-size: 2rem;
+        }
+
+        .welcome-text {
+          font-size: 1rem;
+        }
+
+        .cta-button {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="welcome-card">
+      <h1 class="welcome-title">Welcome to your next big idea</h1>
+      <p class="welcome-text">
+        Discover tools and insights tailored to help you launch faster and with
+        confidence.
+      </p>
+      <a class="cta-button" href="#">Get started</a>
+    </main>
+  </body>
+</html>
